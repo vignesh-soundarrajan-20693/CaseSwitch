@@ -2,7 +2,6 @@
   import { onMount } from "svelte";
   import {
     csi,
-    openLinkInBrowser,
     subscribeBackgroundColor,
     evalTS,
   } from "../lib/utils/bolt";
@@ -110,6 +109,7 @@ const ClearGlobal = () => {
 <div class="app">
   <Panel padding={10} {backgroundColor}>
     <Menus refresh locale={appLocale} />
+    
     <Modal center={true} show={showModal} noButtons={true}>
      
       <h3>Settings - CaseSwitch</h3>

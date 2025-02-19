@@ -26,7 +26,7 @@ import {
 import { sigappu, neelam, pachai, aaranji } from "./aeft-utils";
 
 function saveOriginalText(selectedLayer: TextLayer): void {
-selectedLayer.originalText = selectedLayer.text.sourceText.value;
+  selectedLayer.originalText = selectedLayer.text.sourceText.value;
 }
 
 export const normalizeTextForComparison = (text: string): string => {
@@ -193,7 +193,7 @@ export function mainCaseSwitch(
                 dispatchAlert("Original text restored", pachai, 3000);
               } else {
                 dispatchAlert(
-                  "Text similarity below 90%, restoration skipped",
+                  "Text similarity below 80%, restoration skipped",
                   aaranji,
                   3000
                 );
